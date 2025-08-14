@@ -1,0 +1,243 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background: #08aeb490;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.left-header {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  width: 370px;
+  margin-top: 25px;
+}
+
+
+.earthIcon {
+  width: 150px;
+  height: 150px;
+  margin-top: 3px;
+}
+
+.earthIcon-hidden {
+  display: none;
+}
+
+.sectionInfo {
+  width: 300px;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: #eeeddc 0px 4px 10px;
+  height: 380px;
+}
+
+.sectionInfo,
+p {
+  color: #08a6abed;
+  margin-left: 20px;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.forecastSection {
+  margin-bottom: 30px;
+}
+
+.sectionRecentSearches {
+  margin-bottom: 30px;
+}
+
+.weather-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.forecast-section {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.forecast-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.forecast-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 110px;
+  text-align: center;
+  box-shadow: 0 2px 8px #E0E0E0;
+}
+
+
+.recent-searches-title {
+  color: #ffffff;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.recent-searches-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  color: #e3af34;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-searches-list li {
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.weatherInfo {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherInfoHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 18px;
+}
+
+.weatherIcon-hidden {
+  display: none;
+}
+
+.weatherIcon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+
+#recentSearches li {
+  cursor: pointer;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 2.9em;
+  color: #ffffff;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #59869a;
+  color: #2e3536;
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+button {
+  width: 85px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #59869a;
+  background-color: rgba(219, 228, 44, 0.912);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 5px;
+}
+
+.message {
+  font-size: 22px;
+  color: #ffffff;
+  background-color: rgba(219, 228, 44, 0.912);
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-top: 20px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .top-row,
+  .bottom-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-header,
+  .sectionInfo {
+    width: 70%;
+    text-align: center;
+  }
+
+  .search {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .forecast-cards {
+    flex-direction: row;
+    align-items: center;
+  }
+}

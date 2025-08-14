@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hava Durumu Uygulaması</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="container">
+    <div class="top-row">
+      <div class="left-header">
+        <h1>Hava Durumu Uygulaması</h1>
+        <div class="search">
+          <input type="text" id="cityInput" placeholder="Şehir giriniz">
+          <button id="searchButton">Ara</button>
+        </div>
+      </div>
+
+      <section class="sectionInfo" id="weatherInfo">
+        <div class="weatherInfoHeader">
+          <h2 id="location" class="message">Bugün hava nasıl?</h2>
+          <img class="earthIcon" id="earthIcon" src=".\icons\earth.png" alt="Dünya İkonu" />
+          <img class="weatherIcon-hidden" id="weatherIcon" src="" alt="Hava Durumu İkonu" />
+        </div>
+        <p id="description"></p>
+        <p id="temperature"></p>
+        <p id="feelsLike"></p>
+        <p id="wind"></p>
+      </section>
+    </div>
+
+    <div class="bottom-column">
+      <section class="forecastSection">
+        <div class="forecast-cards" id="forecastCards">
+        </div>
+      </section>
+      <aside class="sectionRecentSearches">
+        <h2 class="recent-searches-title">Son Aramalar</h2>
+        <ul class="recent-searches-list" id="recentSearches"></ul>
+      </aside>
+    </div>
+
+
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</body>
+
+</html>
